@@ -78,11 +78,11 @@ type StarPropsType = {
 }
 
 function Star(props: StarPropsType) {
-        if(props.selected) {
-            return  <span className={"span-start"}><b>star</b></span>
-        } else {
-            return  <span className={"span-start"}>star</span>
-        }
+    if (props.selected) {
+        return <span className={"span-start"}><b>star</b></span>;
+    } else {
+        return <span className={"span-start"}>star</span>;
+    }
 }
 
 
