@@ -9,7 +9,8 @@ function App() {
             <TitleApp value={"This is APP component"}/>
             <TitleApp value={"My friends"}/>
             <Rating value={3}/>
-            <Accordion/>
+            <Accordion titleValue={"Menu"}/>
+            <Accordion titleValue={"Settings"}/>
             <Rating value={0}/>
             <Rating value={1}/>
             <Rating value={2}/>
@@ -20,7 +21,11 @@ function App() {
     );
 }
 
-function TitleApp(props: any) {
+type TitleAppPropsType = {
+    value: string
+}
+
+function TitleApp(props: TitleAppPropsType) {
     return (
         <>
             <h2>{props.value}</h2>
