@@ -6,6 +6,7 @@ type AccordionPropsType = {
 }
 
 function Accordion(props: AccordionPropsType) {
+
     if(props.collapsed) {
         return (
             <>
@@ -16,7 +17,7 @@ function Accordion(props: AccordionPropsType) {
     } else {
         return (
             <>
-                <AccordionTitle title = {props.titleValue}/>
+                <AccordionTitle title={props.titleValue}/>
             </>
         );
     }
