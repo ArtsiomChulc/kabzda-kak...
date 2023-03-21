@@ -5,10 +5,12 @@ import Rating from "./rating/Rating";
 import UnControlledRating from "./rating/UnControlledRating";
 import { OnOff } from './OnOff/OnOff';
 import { OffOn } from './rating/OffOn/OffOn';
+import { Counter } from './Counter/Counter';
 
 function App() {
     return (
         <div className={"wrapper"}>
+            <Counter />
             <OffOn />
             <TitleApp value={"This is APP component"} />
             <TitleApp value={"My friends"} />
