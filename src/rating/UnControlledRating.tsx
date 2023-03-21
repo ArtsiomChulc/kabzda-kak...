@@ -5,7 +5,10 @@ function UnControlledRating() {
 
     let [value, setValue] = useState(0)
 
+    // const callBackHandler = () => {
 
+
+    // }
 
 
     return (
@@ -15,6 +18,11 @@ function UnControlledRating() {
             <Star selected={value > 2} /><button onClick={() => setValue(3)}>+</button>
             <Star selected={value > 3} /><button onClick={() => setValue(4)}>+</button>
             <Star selected={value > 4} /><button onClick={() => setValue(5)}>+</button>
+            {/* <Star selected={value > 0} callBack={callBackHandler} />
+            <Star selected={value > 1} callBack={callBackHandler} />
+            <Star selected={value > 2} callBack={callBackHandler} />
+            <Star selected={value > 3} callBack={callBackHandler} />
+            <Star selected={value > 4} callBack={callBackHandler} /> */}
         </div>
     )
 }
@@ -25,23 +33,24 @@ type StarPropsType = {
 }
 
 function Star(props: StarPropsType) {
-
+    // let [selected, setSelected] = useState(false)
     // let styleStar = {
     //     paddingLeft: '10px',
     //     cursor: 'pointer',
     // }
-    // const onMouseHandler = (setValue: (value: number) => void) => {
+    // const onMouseHandler = () => {
     //     props.callBack()
+    //     setSelected(!selected)
     // }
 
     // return (
-    // <>
-    //     {props.selected ? <span style={styleStar} onMouseEnter={onMouseHandler}>
-    //         <b>star</b>
-    //     </span> : <span style={styleStar} onMouseEnter={onMouseHandler}>
-    //         star
-    //     </span>}
-    // </>
+    //     <>
+    //         {selected ? <span style={styleStar} onClick={onMouseHandler}>
+    //             <b>star</b>
+    //         </span> : <span style={styleStar} onClick={onMouseHandler}>
+    //             star
+    //         </span>}
+    //     </>
 
     // )
     if (props.selected) {
