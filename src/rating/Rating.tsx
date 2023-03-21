@@ -6,6 +6,8 @@ type RatingPropsType = {
 
 function Rating(props: RatingPropsType) {
 
+
+
     return (
         <div>
             <Star selected={props.value > 0} />

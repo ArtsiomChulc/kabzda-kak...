@@ -4,6 +4,31 @@
     margin: auto;
     padding: 60px;
 }
+
 .span-start {
     padding-left: 10px;
+}
+
+.on-off {
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: center;
+}
+
+.lamps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: center;
 }
